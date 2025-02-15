@@ -7,7 +7,7 @@ Here, we configure where and how the files should be stored on disk.
 The diskStorage method returns an object that we pass to Multer.
   */
   destination: function (req, file, cb) {
-    cb(null, "/public/temp");
+    cb(null, "public/temp");
     /*destination: function (req, file, cb) {...}
     This function determines where the uploaded files should be saved.
     It receives:

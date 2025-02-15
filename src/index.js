@@ -4,7 +4,7 @@ import connectDb from "./db/index.js";
 import app from "./app.js";
 
 dotenv.config({
-  path: "./env",
+  path: "./.env",
 });
 
 connectDb()
@@ -16,6 +16,7 @@ connectDb()
   .catch((error) => {
     console.log("Mongodb connection error", error);
   });
+
 /*import express from "express";
 const app = express();
 (async () => {
